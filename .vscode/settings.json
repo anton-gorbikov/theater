@@ -1,8 +1,10 @@
 {
-	"files.exclude": {
-		"**/bin": true,
-		"**/obj": true,
-		"**/.ionide": true
-	},
-	"editor.insertSpaces": true
+    "files.exclude": {
+        "**/bin": true,
+        "**/obj": true,
+        ".ionide": true,
+        "dist": true,
+        ".fable": true
+    },
+    "editor.insertSpaces": true
 }

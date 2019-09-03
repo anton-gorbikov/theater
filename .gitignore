@@ -1,4 +1,13 @@
+# VS Code
 .ionide
 
+# .NET
 bin
 obj
+.fable
+
+# NPM
+node_modules
+
+# Application
+dist
