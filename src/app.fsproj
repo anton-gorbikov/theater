@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <Compile Include="app.fs" />
-    <Compile Include="index.fs" />
+    <Compile Include="main.fs" />
   </ItemGroup>
 
   <ItemGroup>

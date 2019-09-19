@@ -1,4 +1,4 @@
-module Index
+module Main
 
 open Fable.React
 open App
