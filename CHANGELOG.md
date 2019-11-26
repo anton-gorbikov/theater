@@ -2,3 +2,6 @@
 
 ### Features
 * First working version;
+
+### Build
+* Add CSS import support;
