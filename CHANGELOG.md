@@ -5,3 +5,4 @@
 
 ### Build
 * Add CSS import support;
+* Configure GitHub actions;
