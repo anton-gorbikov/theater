@@ -6,3 +6,4 @@
 ### Build
 * Add CSS import support;
 * Configure GitHub actions;
+* Update React to v16.12;
