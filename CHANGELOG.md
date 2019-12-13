@@ -1,9 +1,10 @@
 # 1.0.0
 
 ### Features
-* First working version;
+* **core**: first working version;
 
 ### Build
-* Add CSS import support;
-* Configure GitHub actions;
-* Update React to v16.12;
+* **core**: add CSS import support;
+* **core**: configure GitHub actions;
+* **core**: update React to v16.12;
+* **core**: enable stylelint;

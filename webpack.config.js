@@ -1,6 +1,7 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const StylelintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
     entry: './src/app.fsproj',
@@ -9,6 +10,12 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'Theater',
             template: './src/index.html'
+        }),
+        new StylelintPlugin({
+            configFile: 'stylelint.config.js',
+            context: './src',
+            files: '**/*.css',
+            fix: true
         })
     ],
     output: {
