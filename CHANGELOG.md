@@ -8,3 +8,4 @@
 * **core**: configure GitHub actions;
 * **core**: update React to v16.12;
 * **core**: enable stylelint;
+* **core**: enable postcss autoprefixer;
