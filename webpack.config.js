@@ -5,6 +5,11 @@ const StylelintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
     entry: './src/app.fsproj',
+    devServer: {
+        contentBase: './dist',
+        open: 'Google Chrome',
+        historyApiFallback: true
+    },
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
