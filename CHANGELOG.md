@@ -2,6 +2,7 @@
 
 ### Features
 * **core**: first working version;
+* **core**: integrate React Router;
 
 ### Build
 * **core**: add CSS import support;
