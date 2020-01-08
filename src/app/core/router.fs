@@ -1,8 +1,6 @@
 module Router
 
 open Fable.Core
-// open Fable.Helpers.React
-// open Fable.Import.React
 open Fable.Core.JsInterop
 open Fable.React
 
