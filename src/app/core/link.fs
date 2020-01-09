@@ -11,14 +11,9 @@ type ToObject = {
     state: string
 }
 
-type To =
-    | String of string
-    | Object of ToObject
-    | Function of string -> string // TODO: or string -> object
-
 type LinkProps =
-    | To of To
-    | Replace of boolean
+    | To of U3<string, ToObject, (string -> string)>
+    | Replace of bool
 
 let inline Link (props: LinkProps list) (elems: ReactElement list): ReactElement =
     ofImport "Link" "react-router-dom" (keyValueList CaseRules.LowerFirst props) elems

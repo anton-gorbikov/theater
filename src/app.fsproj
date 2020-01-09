@@ -6,7 +6,8 @@
     <Compile Include="app/core/browser-router.fs" />
     <Compile Include="app/core/hash-router.fs" />
     <Compile Include="app/core/link.fs" />
-    <Compile Include="app/core/router.fs" />
+    <Compile Include="app/core/route.fs" />
+    <Compile Include="app/core/switch.fs" />
     <Compile Include="app/app.fs" />
     <Compile Include="main.fs" />
   </ItemGroup>
