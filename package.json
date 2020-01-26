@@ -4,7 +4,7 @@
   "description": "The site about theaters",
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server"
   },
   "author": "Anton Gorbikov",
   "private": true,

@@ -7,7 +7,7 @@ module.exports = {
     entry: './src/app.fsproj',
     devServer: {
         contentBase: './dist',
-        open: 'Google Chrome',
+        open: 'google-chrome',
         historyApiFallback: true
     },
     plugins: [
