@@ -7,8 +7,9 @@ module.exports = {
     entry: './src/app.fsproj',
     devServer: {
         contentBase: './dist',
-        open: 'google-chrome',
-        historyApiFallback: true
+        historyApiFallback: true,
+        host: '0.0.0.0',
+        port: 4200
     },
     plugins: [
         new CleanWebpackPlugin(),
