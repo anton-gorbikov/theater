@@ -4,7 +4,8 @@ open Fable.Core
 open Fable.Core.JsInterop
 open Fable.React
 
-type ToObject = {
+type ToObject =
+{
     pathname: string
     search: string
     hash: string

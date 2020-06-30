@@ -11,4 +11,5 @@
 * **core**: enable stylelint;
 * **core**: enable postcss autoprefixer;
 * **core**: add webpack development server;
+* **core**: add fantomas support;
 * **vs-code**: add dev containers support;
