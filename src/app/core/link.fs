@@ -5,15 +5,13 @@ open Fable.Core.JsInterop
 open Fable.React
 
 type ToObject =
-{
-    pathname: string
-    search: string
-    hash: string
-    state: string
-}
+    { pathname: string
+      search: string
+      hash: string
+      state: string }
 
 type LinkProps =
-    | To of U3<string, ToObject, (string -> string)>
+    | To of U3<string, ToObject, string -> string>
     | Replace of bool
 
 let inline Link (props: LinkProps list) (elems: ReactElement list): ReactElement =
