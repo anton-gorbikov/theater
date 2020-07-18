@@ -4,16 +4,20 @@
   "description": "The site about theaters",
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server"
+    "build:server": "fable-splitter src/api/api.fsproj -o dist/api --commonjs",
+    "start": "webpack-dev-server",
+    "start:server": "yarn build:server && node dist/api/main.js"
   },
   "author": "Anton Gorbikov",
   "private": true,
   "devDependencies": {
     "@babel/core": "^7.10.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.6.0",
     "fable-compiler": "^2.10.1",
     "fable-loader": "^2.1.9",
+    "fable-splitter": "^2.2.1",
     "html-webpack-plugin": "^4.3.0",
     "postcss-loader": "^3.0.0",
     "style-loader": "^1.2.1",

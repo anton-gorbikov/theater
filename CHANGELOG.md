@@ -3,6 +3,7 @@
 ### Features
 * **core**: first working version;
 * **core**: integrate React Router;
+* **core**: add initial Express server implementation;
 
 ### Build
 * **core**: add CSS import support;
