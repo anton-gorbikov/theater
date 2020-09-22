@@ -6,5 +6,6 @@
         "dist": true,
         ".fable": true
     },
-    "editor.insertSpaces": true
+    "editor.insertSpaces": true,
+    "FSharp.suggestGitignore": false
 }
