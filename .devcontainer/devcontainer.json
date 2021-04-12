@@ -1,11 +1,20 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.166.1/containers/dotnet-fsharp
 {
     "name": "Fable",
-    "dockerFile": "Dockerfile",
-    "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash",
-        "FSharp.useSdkScripts": true
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            // Options
+            "INSTALL_NODE": "true",
+            "NODE_VERSION": "lts/*",
+            "UPGRADE_PACKAGES": "false"
+        }
     },
-    "appPort": [
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "forwardPorts": [
         4200,
         3000
     ],
@@ -13,5 +22,6 @@
         "Ionide.Ionide-fsharp",
         "streetsidesoftware.code-spell-checker",
         "stylelint.vscode-stylelint"
-    ]
+    ],
+    "remoteUser": "vscode"
 }
