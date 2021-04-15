@@ -1,0 +1,9 @@
+{
+  "name": "theater-api",
+  "version": "1.0.0",
+  "description": "API of Theater application",
+  "main": "main.js",
+  "author": "Anton Gorbikov",
+  "private": true,
+  "type": "module"
+}

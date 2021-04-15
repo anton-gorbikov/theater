@@ -13,4 +13,5 @@
 * **core**: enable postcss autoprefixer;
 * **core**: add webpack development server;
 * **core**: add fantomas support;
+* **core**: update Fable to v3;
 * **vs-code**: add dev containers support;
