@@ -15,11 +15,11 @@ module.exports = {
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             title: 'Theater',
-            template: './src/index.html'
+            template: './src/app/index.html'
         }),
         new StylelintPlugin({
             configFile: 'stylelint.config.js',
-            context: './src',
+            context: './src/app',
             files: '**/*.css',
             fix: true
         })

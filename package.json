@@ -4,9 +4,9 @@
   "description": "The site about theaters",
   "scripts": {
     "postinstall": "dotnet tool restore",
-    "build": "dotnet fable src/app.fsproj -o dist/app --run webpack",
+    "build": "dotnet fable src/app/app.fsproj -o dist/app --run webpack",
     "build:server": "node server-prepare && dotnet fable src/api -o dist/api",
-    "start": "dotnet fable watch src/app.fsproj -o dist/app --run webpack serve",
+    "start": "dotnet fable watch src/app/app.fsproj -o dist/app --run webpack serve",
     "start:server": "yarn build:server && node dist/api/main.js"
   },
   "author": "Anton Gorbikov",
