@@ -8,3 +8,9 @@
 1. If you are connecting to the repository via SSH run `ssh-add ~/.ssh/id_rsa` (replace `id_rsa` with proper key name).
 1. Open folder in container.
 1. `yarn` to install `node_modules`.
+
+## Issues
+
+### Can't write file on Linux (EACCESS error)
+
+Run `chown -R $(whoami) theater` command
