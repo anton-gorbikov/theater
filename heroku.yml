@@ -1,7 +1,5 @@
 build:
   docker:
     web: Dockerfile
-    api: Dockerfile
 run:
   web: npm run start:web
-  api: npm run start:api
