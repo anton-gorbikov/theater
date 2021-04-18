@@ -3,5 +3,5 @@ build:
     web: Dockerfile
     api: Dockerfile
 run:
-  web: yarn start:web
-  api: yarn start:api
+  web: npm run start:web
+  api: npm run start:api
