@@ -20,4 +20,7 @@ let application = Express.Create()
 application.``use`` (Express.``static`` __dirname)
 application.``use`` ("/", (fun _ res _ -> (res.sendFile (__dirname + "/index.html"))))
 
-application.listen 4200 (fun () -> printf "Theater web application started")
+[<Emit("process.env.port || 4200")>]
+let port : int = jsNative
+
+application.listen port (fun () -> printf "Theater web application started")
