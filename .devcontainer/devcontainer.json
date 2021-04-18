@@ -1,0 +1,17 @@
+{
+    "name": "Fable",
+    "dockerFile": "Dockerfile",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "FSharp.useSdkScripts": true
+    },
+    "appPort": [
+        4200,
+        3000
+    ],
+    "extensions": [
+        "Ionide.Ionide-fsharp",
+        "streetsidesoftware.code-spell-checker",
+        "stylelint.vscode-stylelint"
+    ]
+}
