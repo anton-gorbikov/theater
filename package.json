@@ -7,7 +7,7 @@
     "build:web": "dotnet fable src/app/app.fsproj -o dist/tmp --run webpack",
     "build:api": "node api-prepare && dotnet fable src/api -o dist/api",
     "start": "dotnet fable watch src/app/app.fsproj -o dist/tmp --run webpack serve",
-    "start:web": "dotnet fable watch src/app/app.fsproj -o dist/tmp --run webpack serve",
+    "start:web": "yarn build:web && node dist/app/index.js",
     "start:api": "yarn build:api && node dist/api/main.js"
   },
   "author": "Anton Gorbikov",
