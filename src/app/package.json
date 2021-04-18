@@ -5,5 +5,8 @@
   "main": "index.js",
   "author": "Anton Gorbikov",
   "private": true,
-  "type": "module"
+  "type": "module",
+  "scripts": {
+    "start": "node ../../ dist/api/index.js"
+  }
 }
