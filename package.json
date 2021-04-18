@@ -4,10 +4,11 @@
   "description": "The site about theaters",
   "scripts": {
     "postinstall": "dotnet tool restore",
-    "build": "dotnet fable src/app/app.fsproj -o dist/app --run webpack",
-    "build:server": "node server-prepare && dotnet fable src/api -o dist/api",
-    "start": "dotnet fable watch src/app/app.fsproj -o dist/app --run webpack serve",
-    "start:server": "yarn build:server && node dist/api/main.js"
+    "build:web": "dotnet fable src/app/app.fsproj -o dist/tmp --run webpack",
+    "build:api": "node api-prepare && dotnet fable src/api -o dist/api",
+    "start": "dotnet fable watch src/app/app.fsproj -o dist/tmp --run webpack serve",
+    "start:web": "dotnet fable watch src/app/app.fsproj -o dist/tmp --run webpack serve",
+    "start:api": "yarn build:api && node dist/api/main.js"
   },
   "author": "Anton Gorbikov",
   "private": true,
@@ -15,6 +16,7 @@
     "@babel/core": "^7.13.15",
     "@babel/plugin-transform-modules-commonjs": "^7.13.8",
     "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^8.1.1",
     "css-loader": "^5.2.1",
     "html-webpack-plugin": "^5.3.1",
     "postcss-loader": "^5.2.0",

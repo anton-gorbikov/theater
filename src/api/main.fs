@@ -1,9 +1,9 @@
 module Main
 
-open Express
+open express
 
-let application = Express()
+let application = Express.Create()
 
 application.get "/users" (fun _req res -> res.send "Users")
 
-application.listen 3000 (fun () -> printf "Hello World")
+application.listen 3000 (fun () -> printf "Theater API application started")
